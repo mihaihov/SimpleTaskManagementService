@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace TaskManagementService 
 {    
@@ -12,20 +13,20 @@ namespace TaskManagementService
             _dbContext = dbContext;
         }
 
-        [HttpGet("gettaskbyid", Name = "GetTaskById")]
+        [HttpGet("gettaskbyid", Name = "GetTaskById"), Authorize]
         public async Task<Task?> GetTaskById(Guid Id)
         {
             return await _dbContext.Set<Task>().FindAsync(Id);
         }
 
-        [HttpGet("getalltasks",Name = "GetAllTasks")]
+        [HttpGet("getalltasks",Name = "GetAllTasks"), Authorize]
         public async Task<IReadOnlyList<Task>> GetAllTasks()
         {
                 List<Task> Tasks = await _dbContext.Set<Task>().ToListAsync();
                 return Tasks;
         }
 
-        [HttpPost("savenewtask", Name ="SaveNewTask")]
+        [HttpPost("savenewtask", Name ="SaveNewTask"), Authorize]
         public async Task<IActionResult> SaveNewTask([FromBody]Task Task)
         {
             try
@@ -41,7 +42,7 @@ namespace TaskManagementService
 
         }
 
-        [HttpPut("updatetask",Name = "UpdateTask")]
+        [HttpPut("updatetask",Name = "UpdateTask"), Authorize]
         public async Task<IActionResult> UpdateTask([FromBody]Task Task)
         {
             try

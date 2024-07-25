@@ -51,7 +51,9 @@ if (app.Environment.IsDevelopment())
 //adds authentication and authorization middleware
 app.MapIdentityApi<IdentityUser>();
 
+
 app.UseHttpsRedirection();
+
 
 var summaries = new[]
 {
@@ -74,6 +76,7 @@ app.MapGet("/weatherforecast", () =>
 .WithOpenApi();
 
 app.UseRouting();
+app.UseAuthorization();
 app.UseCors("AllowReactApp");
 
 app.UseEndpoints(endpoints =>
