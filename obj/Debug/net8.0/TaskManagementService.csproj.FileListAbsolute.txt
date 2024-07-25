@@ -135,3 +135,13 @@
 /Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Microsoft.Extensions.Identity.Core.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/obj/Debug/net8.0/TaskManagementService.sourcelink.json
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Scrutor.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Filters.dll
+/Users/danielaarvinti/Desktop/Mihai/TaskManagementService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll

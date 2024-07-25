@@ -46,7 +46,7 @@ namespace TaskManagementService
         {
             try
             {
-                _dbContext.Entry(Task).State = EntityState.Modified;
+                _dbContext.Tasks!.Entry(Task).State = EntityState.Modified;
                 await _dbContext.SaveChangesAsync();
                 return Ok(Task);
             }
