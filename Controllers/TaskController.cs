@@ -26,6 +26,14 @@ namespace TaskManagementService
                 return Tasks;
         }
 
+        [HttpPost("getalltasksbyuserid", Name = "GetAllTasksByUserId"), Authorize]
+        public async Task<IReadOnlyList<Task>> GetAllTasksByUserId([FromBody]string userId)
+        {
+            Guid id = Guid.Parse(userId);
+            List<Task> Tasks = await _dbContext.Set<Task>().Where(x => x.UserId == id).ToListAsync();
+            return Tasks;
+        }
+
         [HttpPost("savenewtask", Name ="SaveNewTask"), Authorize]
         public async Task<IActionResult> SaveNewTask([FromBody]Task Task)
         {
